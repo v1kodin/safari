@@ -1,0 +1,498 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400,500,700;
+    font-size: 18px;
+    line-height: 140%;
+    color: #1F1E1E;
+}
+
+a{
+    text-decoration: none; /*убираем подчеркивание*/
+    color: inherit; /*наследование цвета*/
+    cursor: pointer; /*меняет курсор на указатель*/
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.header{
+    background-image: url(/images/bg/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; /*заполнение экрана*/
+}
+
+.header__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 0 49px;
+}
+.header__phone{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header__phone-number{
+    font-weight: 400;
+    margin-left: 19px;
+    padding: 12px 31px 13px;
+    background-color: #886239;
+    border-radius: 22px;
+}
+
+.menu{
+    width: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    padding: 27px 0 24px;
+}
+.menu__list{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+.header__title{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.header__descr{
+    font-weight: 700;
+    font-style: 20px;
+    max-width: 420px;
+    margin-bottom: 20px;
+}
+
+.header__btn{
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    padding: 19px 55px 20px;
+    background-color: #886239;
+    border-radius: 30px;
+
+}
+
+.header__arrow{
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.direction{
+    padding: 100px 0;
+}
+
+.direction__inner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
+
+.direction__text{
+    font-size: 16px;
+    border: 1px solid #D9D9DE;
+    border-top: none;
+    padding: 10px 19px 14px;
+}
+
+.direction__img{
+    display: block;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.travel__info{
+    background-image: url(/images/bg/big_bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; /*заполнение экрана*/
+    padding: 30px 0 50px;
+}
+
+.travel__info-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 53px;
+    
+}
+
+.travel-info__title{
+    margin-bottom: 50px;
+    color: #FFF;
+}
+
+.travel-info__text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+    line-height: 130%;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.popular{
+    padding: 100px 0;
+}
+
+.popular__title{
+    margin-bottom: 40px;
+}
+
+.popular__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4. 1fr );
+    grid-gap: 32px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #D9D9DE;
+}
+
+.popular__link{
+    padding: 16px 24px 19px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 256px;
+}
+
+.popular__link:nth-child(3),
+.popular__link:nth-child(6){
+    grid-column: span 2;
+    grid-row: span 2;
+    
+}
+
+
+.popular__link-title{
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 130%;
+}
+
+.popular__link-title--big{
+    font-size: 24px;
+}
+
+.popular__price{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: auto;
+}
+
+.popular__country,
+.popular__time{
+    margin-bottom: 15px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.map{
+    padding-bottom: 100px;
+}
+
+.map__title{
+    margin-bottom: 46px;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.about{
+    padding-bottom: 100px;
+}
+
+.about__inner{
+    display: grid;
+    grid-template-columns: 448px 640px;
+    grid-gap: 32px;
+}
+.about__title{
+    text-align-last: left;
+    margin-bottom: 25px;
+}
+.about__text{
+    margin-bottom: 34px;
+}
+.about__link{
+    font-size: 16px;
+    font-weight: 400;
+    color: #c4c4c4;
+    text-decoration: underline;
+}
+.about__popup{
+    background-image: url(/images/bg/video_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.gallery{
+    padding: 50px 0 105px;
+    background: #886239;
+    color: #FFF;
+}
+.gallery__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-right: 160px;
+}
+.gallery__link{
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: underline;
+}
+.gallery__item-inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+}
+
+.slick-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: -85px;
+    right: 0;
+}
+.slick-prev{
+    right: 60px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.tour{
+    padding: 100px 0;
+}
+.tour__title{
+    margin-bottom: 77px;
+}
+.tour__box{
+    column-count: 2;
+    column-gap: 46px;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 50px;
+    margin-bottom: 44px;
+}
+.tour__text{
+    margin-bottom: 15px;
+}
+.tour__text span{
+    font-weight: 700;
+}
+.tour__info{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 70px;
+}
+.tour__info-item{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 60px;
+    color: #886239;
+    text-align: center;
+}
+.tour__info-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #1F1E1E;
+    text-align: center;
+    line-height: 20px;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.booking{
+    background: #EAEAEA;
+    padding: 75px 0;
+}
+.booking__title{
+    margin-bottom: 43px;
+}
+.booking__form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 860px;
+    margin: 0 auto;
+}
+.booking__input{
+    width: 256px;
+    height: 44px;
+    border: 1px solid #D9D9DE;
+    background: #FFFFFF;
+    padding: 11px 14px 12px;
+    margin-bottom: 28px;
+    font-size: 16px;
+}
+.booking__input::placeholder,
+.booking__area::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #C4C4C4;
+}
+.booking__area{
+    width: 100%;
+    padding: 14px;
+    height: 112px;
+    border: 1px solid #D9D9DE;
+    resize: none;
+    margin-bottom: 67px;
+}
+.booking__btn{
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 19px 65px 20px;
+    background-color: #886239;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.booking__lable{
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+.booking__checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding-left: 45px;
+    
+}
+.booking__checkbox-style{
+    width: 26px;
+    height: 26px;
+    border: 2px solid #c4c4c4;
+    border-radius: 2px;
+    position: absolute;
+    margin-left: -45px;
+    box-shadow: 0px 4px 4px 0px #00000040; 
+    cursor: pointer;
+}
+.booking__checkbox:checked + .booking__checkbox-style::before{
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #c4c4c4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.footer{
+    background: #1F1E1E;
+    padding: 80px 0;
+    
+}
+.footer__logo{
+    
+    text-align: center;
+    margin-bottom: 70px;
+}
+.footer__box{
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+
+.footer__info {
+    width: 225px;
+}
+.footer__box-title {
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+.footer__copy {
+    margin-bottom: 3px;
+    opacity: 0.8;
+}
+.footer__link {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+.footer__address {
+    width: 165px;
+}
+.footer__adress-text {
+    opacity: 0.8;
+}
+.footer__contacts {
+    width: 210px;
+}
+.footer__phone {
+    opacity: 0.8;
+}
+.footer__mail {
+    display: block;
+    opacity: 0.8;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
